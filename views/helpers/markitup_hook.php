@@ -85,7 +85,7 @@ class MarkitupHookHelper extends AppHelper {
     }
 
     function beforeRender() {
-        if (Configure::read('Writing.wysiwyg')) {
+        if (Configure::read('Writing.wysiwyg') && ClassRegistry::getObject('view')) {
 			echo $this->Html->css('/markitup/css/markitup/skins/simple/style');
 			echo $this->Html->css('/markitup/css/markitup/sets/html/style');
 			echo $this->Html->css('/markitup/css/jqModal');
