@@ -1,0 +1,12 @@
+# Markitup
+
+A plugin for using the [markItUp!](http://markitup.jaysalvat.com/ "markItUp!") jQuery editor with Croogo CMS.
+
+Requires [Croogo 1.3.2](http://github.com/croogo/croogo/downloads) or above.
+
+## How to use
+
+* Log in to admin panel
+* Go to Extensions > Plugins page
+* Upload the zip file ([available here](http://github.com/jacmoe/markitup/downloads))
+* Click on tick/cross icon of 'Markitup' for activating or deactivating the plugin
