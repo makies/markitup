@@ -55,6 +55,13 @@ mySettings = {
 		{separator:'---------------'},	
 		{name:'Quotes', openWith:'> '},
 		{name:'Code', className:'code', openWith:'<pre class="brush:php">', closeWith:'</pre>' },
+		{name:'Encode Html special chars',
+			className:"encodechars", 
+			replaceWith:function(markItUp) { 
+				container = document.createElement('div');
+				container.appendChild(document.createTextNode(markItUp.selection));
+				return container.innerHTML; 
+			}},
 		{separator:'---------------'},
 		//{name:'Preview', call:'preview', className:"preview"}
 	]
