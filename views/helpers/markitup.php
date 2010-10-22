@@ -78,12 +78,13 @@ class MarkitupHelper extends AppHelper {
         if (Configure::read('Writing.wysiwyg') && ClassRegistry::getObject('view')) {
 			echo $this->Html->css('/markitup/js/markitup/skins/simple/style');
 			echo $this->Html->css('/markitup/js/markitup/sets/markdown/style');
-			echo $this->Html->css('/markitup/css/jqModal');
+			echo $this->Html->css('/markitup/js/jqModal');
 			echo $this->Html->script('/markitup/js/jqModal', array('inline' => false));
 			echo $this->Html->script('/markitup/js/markitup/jquery.markitup', array('inline' => false));
 			echo $this->Html->script('/markitup/js/markitup/sets/markdown/set', array('inline' => false));
-            echo $this->Html->scriptBlock($this->fileBrowserCallBack(), array('inline' => false));
-            echo $this->Html->scriptBlock('   $(document).ready(function() {
+      echo $this->Html->scriptBlock($this->fileBrowserCallBack(), array('inline' => false));
+
+      echo $this->Html->scriptBlock('   $(document).ready(function() {
       $("#NodeBody").markItUp(mySettings);
    });
 ', array('inline' => false));
