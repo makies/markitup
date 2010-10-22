@@ -12,6 +12,8 @@
 // -------------------------------------------------------------------
 mySettings = {
 	previewParserPath:	'',
+	resizeHandle: true,
+  //previewInWindow: 'width=800, height=600, resizable=yes, scrollbars=yes',
 	onShiftEnter:		{keepDefault:false, openWith:'\n\n'},
 	markupSet: [
 		{name:'First Level Heading', key:'1', placeHolder:'Your title here...', closeWith:function(markItUp) { return miu.markdownTitle(markItUp, '=') } },
@@ -52,9 +54,9 @@ mySettings = {
 					] },
 		{separator:'---------------'},	
 		{name:'Quotes', openWith:'> '},
-		{name:'Code Block / Code', openWith:'(!(\t|!|`)!)', closeWith:'(!(`)!)'},
+		{name:'Code', className:'code', openWith:'<pre class="brush:php">', closeWith:'</pre>' },
 		{separator:'---------------'},
-		{name:'Preview', call:'preview', className:"preview"}
+		//{name:'Preview', call:'preview', className:"preview"}
 	]
 }
 
