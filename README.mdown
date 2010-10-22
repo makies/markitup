@@ -19,3 +19,9 @@ It _can_ use other sets in the future. (Submit a feature request, or fork the pr
 
 * When using this editor plugin, be sure to have wysiwyg editing turned on in Croogo.
 * The Code button inserts html tags for use with the [highlighter](http://github.com/jacmoe/highlighter) extension, and you need to _sanitise_ the code by selecting it and use the Encode button before submitting the page.
+
+## TO-DO
+
+1. Hook up the upload image(s) script. As of now, you need to know the path to the images beforehand - that is: upload before writing using the file manager, or after.
+2. Settings! If the user wants to use another set, then it should be possible, etc.
+3. Make the Preview button work - it's currently commented out.
