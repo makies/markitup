@@ -1,5 +1,5 @@
 <?php
-class MarkitupController extends Controller {
+class MarkitupController extends MarkitupAppController {
 	public $components = null;
 	public $helpers = array('Markitup.Markitup');
 	public $layout = 'ajax';
@@ -9,4 +9,10 @@ class MarkitupController extends Controller {
 		$this->set(compact('content', 'parser'));
 	}
 }
+    function preview($parser = 'markdown') {
+        $this->layout = 'preview';
+        $this->set('parser', $parser);        
+        $this->set('content', $this->data);
+        $this->autoRender = true;
+    }
 ?>
