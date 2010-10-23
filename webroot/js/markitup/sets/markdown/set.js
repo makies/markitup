@@ -63,7 +63,7 @@ mySettings = {
 				return container.innerHTML; 
 			}},
 		{separator:'---------------'},
-		{name:'Preview', call:'preview', className:"preview"}
+		//{name:'Preview', call:'preview', className:"preview"}
 	]
 }
 
